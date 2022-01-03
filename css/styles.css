@@ -4,6 +4,13 @@ h1 {
   color: #ffffff;
 }
 
+h2 {
+  font-size: 25px;
+  text-align: center;
+  text-shadow: 0 0 10px #140303;
+  color: #ffffff;
+}
+
 h3 {
   font-size: 30px;
   text-align: center;
@@ -11,26 +18,28 @@ h3 {
   color: #ffffff;
 }
 
-
 body {
   background-image: url("https://i.imgur.com/NuMMwOR.jpg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   background-blend-mode: overlay;
 }
 
 .layer {
     background:
-    linear-gradient(180deg, rgba(7,5,16,0.7), black);
+    linear-gradient(180deg, rgba(7,5,16,0.35), rgba(7,5,16));
     background-color: rgba(7, 5, 16, 0.9);
+	background-attachment: fixed;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 article#main {
+  display: block;
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -56,7 +65,6 @@ section#outputs {
 }
 /* center the button #clear */
 
-
 textarea#output {
   height: 25vh;
   resize: none;
@@ -69,32 +77,56 @@ textarea#input {
   width: 45%;
 }
 
-
 #clear {
-  background-color: #1d1b1b;
+  background-color: #FFFFFF1A;
   border: solid;
-  border-radius: 1px;
-  border-color: #ffffff;
+  border-radius: 8px;
+  border-color: rgba(0, 0, 0, 0);
   color: white;
   padding: 15px 32px;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
+  transition: 0.3s;
+  font-weight: 550;
 }
 
+#clear:hover {
+  background-color: #FFFFFF33;
+}
 
 #copy {
-  background-color: #1d1b1b;
+  background-color: #00BBFF;
   border: solid;
-  border-radius: 1px;
-  border-color: #ffffff;
-  color: white;
+  border-radius: 8px;
+  border-color: rgba(0, 0, 0, 0);
+  color: black;
   padding: 15px 32px;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
+  transition: 0.3s;
+  font-weight: 550;
+}
+
+#copy:hover {
+  background-color: #00BBFFCC;
+}
+
+#divider {
+    opacity: 1;
+    height: 1px;
+    border-width: 0px 0px 2.5px;
+    border-color: #FFFFFF1A;
+    border-style: solid;
+    width: 40%;
+}
+
+#wiki {
+	width: 40%;
+    height: 60vh;
 }
 
 /* #copy {
