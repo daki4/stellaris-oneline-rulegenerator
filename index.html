@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="./js/index.js"></script>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <div>
+    <h1>Generate your LFG Services bot rules</h1>
+    <h3>Paste in the rules you would normally put in discord, and you will receive the proper format for the bot</h3>
+    <form>
+      <label for="input">
+        <h2 id="input1">Input</h2>
+      </label>
+      <textarea id="input"
+        oninput="oneline(document.getElementById('input').value, document.getElementById('output'))"></textarea>
+      <input id="clear" type="button"
+        onclick="document.getElementById('input').value=''; document.getElementById('output').value=''" value="Clear">
+      <input id="copy" type="button" onclick="copyToClipboard(document.getElementById('output').value)" value="Copy to clipboard">
+      <label for="output">
+        <h2 id="output2">Output</h2>
+      </label>
+      <textarea id="output"></textarea>
+    </form>
+  </div>
+
+</body>
+
+</html>
