@@ -1,7 +1,3 @@
-body {
-  background-color: #d43f3f;
-}
-
 h1 {
   text-align: center;
   text-shadow: 0 0 10px #140303;
@@ -15,45 +11,91 @@ h3 {
   color: #ffffff;
 }
 
-#input1 {
+
+body {
+  background-image: url("https://i.imgur.com/NuMMwOR.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.layer {
+    background:
+    linear-gradient(180deg, rgba(7,5,16,0.7), black);
+    background-color: rgba(7, 5, 16, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+article#main {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  float: left;
+}
+
+h2#text {
   text-shadow: 0 0 10px #140303;
   color: #ffffff;
   font-size: 40px;
-  position: relative;
-  left: 10px;
-
 }
 
-#input {
+section#inputs {
   width: 40%;
-  height: 250px;
-  resize: none;
-  font-size: 20px;
-  position: relative;
-  left: 10px;
-
+  height: 35vh;
+  font-size: 30px;
 }
 
-#output2 {
-  text-shadow: 0 0 10px #140303;
-  color: #ffffff;
-  font-size: 40px;
-  position: relative;
-  left: 1050px;
-  bottom: 380px;
-}
-
-#output {
+section#outputs {
   width: 40%;
-  height: 250px;
-  resize: none;
-  font-size: 20px;
-  position: relative;
-  left: 1050px;
-  bottom: 390px;
+  height: 35vh;
+  font-size: 30px;
 }
 /* center the button #clear */
 
+
+textarea#output {
+  height: 25vh;
+  resize: none;
+  width: 45%;
+}
+
+textarea#input {
+  height: 25vh;
+  resize: none;
+  width: 45%;
+}
+
+
+#clear {
+  background-color: #1d1b1b;
+  border: solid;
+  border-radius: 1px;
+  border-color: #ffffff;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+#copy {
+  background-color: #1d1b1b;
+  border: solid;
+  border-radius: 1px;
+  border-color: #ffffff;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
 
 /* #copy {
   position: relative;
@@ -61,7 +103,7 @@ h3 {
   bottom: 10px;
 } */
 
-#clear {
+/* #clear {
   background-color: #1d1b1b;
   border: solid;
   border-radius: 1px;
@@ -76,7 +118,7 @@ h3 {
   position: relative;
   left: 80px;
   top: 50px;
-}
+} */
 
 /* #copy {
   background-color: #1d1b1b;
