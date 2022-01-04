@@ -8,26 +8,36 @@
 
 <body>
   <div class="layer">
-    <h1>Generate your LFG Services bot rules</h1>
-    <h3>Paste in the rules you would normally put in discord, and you will receive the proper format for the bot</h3>
+    <h1>Steam LFG Service - Parameter Formatter</h1>
+    <h2>Paste in the text you would normally put in discord, and you will receive it in the proper format</h2>
+	<br/>
+	<hr aria-orientation="horizontal" id="divider">
     <article id="main">
       <section class="inputs">
         <label for="input">
           <h2 id="text">Input</h2>
         </label>
         <textarea id="input"
-          oninput="oneline(document.getElementById('input').value, document.getElementById('output'))"></textarea><br>
+          oninput="oneline(document.getElementById('input').value, document.getElementById('output'))"></textarea><br/><br/>
         <input id="clear" type="button"
           onclick="document.getElementById('input').value=''; document.getElementById('output').value=''" value="Clear">
-        <input id="copy" type="button" onclick="copyToClipboard(document.getElementById('output').value)"
-          value="Copy to clipboard">
       </section>
+	  <br/><br/>
+	  <hr aria-orientation="horizontal" id="divider">
       <section class="outputs">
         <label for="output">
           <h2 id="text">Output</h2>
         </label>
-        <textarea id="output"></textarea>
+        <textarea id="output"></textarea><br/><br/>
+        <input id="copy" type="button" onclick="copyToClipboard(document.getElementById('output').value)"
+          value="Copy to Clipboard">
       </section>
+	  <br/><br/>
+	  <hr aria-orientation="horizontal" id="divider">
+	  <h3>Interactive Wiki</h3>
+	  <h2>Further information on the available formatting.</h2>
+	  <iframe id="wiki" src="https://valkyrinllc.gitbook.io/steamlfgservice/slash-commands/host#available-parameters" allowfullscreen="allowfullscreen"></iframe>
+	  <br/><br/><br/><br/>
     </article>
   </div>
 
